@@ -44,8 +44,8 @@
         you may need to specify delimiter and delimitertype for your scripts to be split properly - these
          work the same as in the ant sql task, see http://ant.apache.org/manual/CoreTasks/sql.html
         -->
-        <dbdeploy driver="${db.driver}" url="${db.url}/testdbdb.url.dbname}"
-                  userid="sa"
+        <dbdeploy driver="${db.driver}" url="${db.url}/testdb.url.dbname}"
+                  userid="root"
                   password=""
                 dir="."/>
 
