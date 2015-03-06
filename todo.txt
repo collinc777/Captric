@@ -1,0 +1,23 @@
+Todo:
+ 
+ 
+ run db-deploy against the database
+	-in the build.xml file we need to point to our database instance
+	- run the db-deploy a few times to make sure migrations work multiple times
+	
+Java
+	Create a DAO/DAOImpl
+	DAO is a data accessor object
+	These guys are the things that will tell our code how to save and retrieve object from the database
+	We can also put small amounts of logic in here if we want
+		-advise against it
+	Basically with a DAO you will OPEN A SESSION to our database instance
+		grab some stuf with a query
+	CLOSE session
+	
+FOR NOW ONLY
+	we can put our API slurper in the main body
+
+	
+
+	
