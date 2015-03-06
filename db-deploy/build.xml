@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="dbdeploy_example" default="default">
+<project name="dbdeploy" default="default">
 
-    <property name="db.driver" value="org.mysqldb.jdbcDriver" />
-    <property name="db.url" value="jdbc:mysqldb:file:db/testdb;shutdown=true" />
+    <property name="db.driver" value="com.mysql.jdbc.Driver" />
+    <property name="db.url" value="jdbc:mysql://localhost" />
+    <property name="db.url.dbname" value="jdbc:mysql://localhost/testdb" />
+
 
     <path id="mysql.classpath">
         <fileset dir=".">
-            <include name="mysqldb*.jar"/>
+            <include name="mysql*.jar"/>
         </fileset>
     </path>
 
     <path id="dbdeploy.classpath">
         <!-- include the dbdeploy-ant jar -->
-        <fileset dir="..">
+        <fileset dir=".">
             <include name="dbdeploy-ant-*.jar"/>
         </fileset>
 
@@ -26,12 +28,12 @@
 
     <target name="default" depends="clean, update-database"/>
 
-    <target name="clean" depends="drop-and-create-database, create-changelog-table"/>
+    <target name="clean" depends="drop-mysql-database, create-mysql-database, create-changelog-table"/>
 
     <target name="create-changelog-table">
-        <sql driver="${db.driver}" url="${db.url}"
-             userid="sa" password="" classpathref="mysql.classpath" >
-            <fileset file="../scripts/createSchemaVersionTable.mysql.sql"/>
+        <sql driver="${db.driver}" url="${db.url.dbname}"
+             userid="root" password="" classpathref="mysql.classpath" >
+            <fileset file="./scripts/*.sql"/>
         </sql>
     </target>
 
@@ -42,19 +44,18 @@
         you may need to specify delimiter and delimitertype for your scripts to be split properly - these
          work the same as in the ant sql task, see http://ant.apache.org/manual/CoreTasks/sql.html
         -->
-        <dbdeploy driver="${db.driver}" url="${db.url}"
+        <dbdeploy driver="${db.driver}" url="${db.url}/testdbdb.url.dbname}"
                   userid="sa"
                   password=""
-                  dir="."
-                />
+                dir="."/>
 
     </target>
 
     <target name="update-database-and-apply-as-separate-step" description="generate a sql upgrade script">
 
         <!-- use dbdeploy to generate the change script -->
-        <dbdeploy driver="${db.driver}" url="${db.url}"
-                  userid="sa"
+        <dbdeploy driver="${db.driver}" url="${db.url}/testdb}"
+                  userid="root"
                   password=""
                   dir="."
                   outputfile="output.sql"
@@ -63,24 +64,35 @@
                 />
 
         <!-- now apply the changescript to the database -->
-        <sql driver="${db.driver}" url="${db.url}"
-             userid="sa" password="" classpathref="hsql.classpath">
+        <sql driver="${db.driver}" url="${db.url.dbname}"
+             userid="root" password="" classpathref="mysql.classpath">
             <fileset file="output.sql"/>
         </sql>
 
     </target>
 
     <target name="dump-tables">
-        <sql driver="${db.driver}" url="${db.url}"
-             userid="sa" password="" print="true" classpathref="hsql.classpath">
+        <sql driver="${db.driver}" url="${db.url.dbname}"
+             userid="root" password="" print="true" classpathref="mysql.classpath">
             select * from changelog;
             select * from test;
         </sql>
     </target>
 
-    <target name="drop-and-create-database">
-        <delete dir="db"/>
-        <mkdir dir="db"/>
+    <target name="drop-mysql-database">
+        <sql driver="${db.driver}" url="${db.url}" userid="root"
+             password="" classpathref="mysql.classpath"
+             autocommit="false" onerror="continue">
+            drop database testdb;
+        </sql>
+    </target>
+
+    <target name="create-mysql-database">
+        <sql driver="${db.driver}" url="${db.url}" userid="root"
+             password="" classpathref="mysql.classpath"
+             autocommit="false" onerror="continue">
+            create database testdb;
+        </sql>
     </target>
 
 </project>
