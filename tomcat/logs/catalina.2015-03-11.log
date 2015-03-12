@@ -112,3 +112,435 @@ Mar 11, 2015 8:03:51 PM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler ["ajp-bio-8009"]
 Mar 11, 2015 8:03:51 PM org.apache.catalina.startup.Catalina start
 INFO: Server startup in 7440 ms
+Mar 11, 2015 8:19:31 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Mar 11, 2015 8:19:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:19:31 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:19:32 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 11, 2015 8:19:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:19:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:19:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:19:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.59
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jan 28 2015 15:51:10 UTC
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.59.0
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 8.1
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.3
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\Program Files\Java\jdk1.8.0_11\jre
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_11-b12
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\Users\collin\IdeaProjects\project/tomcat\conf\logging.properties
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xms512m
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx1024m
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:MaxPermSize=256M
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSClassUnloadingEnabled
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSPermGenSweepingEnabled
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -agentlib:jdwp=transport=dt_socket,address=20004,server=y,suspend=n
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\Users\collin\IdeaProjects\project/tomcat\endorsed
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\Users\collin\IdeaProjects\project/tomcat\temp
+Mar 11, 2015 8:20:36 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\Program Files\Java\jdk1.8.0_11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\collin\bin;.;C:\RailsInstaller\Git\local\bin;C:\RailsInstaller\Git\mingw\bin;C:\RailsInstaller\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Program Files\nodejs;c:\Program Files\PostgreSQL\9.3\bin;c:\Program Files\PostgreSQL\9.3\lib;c:\Program Files (x86)\Java\jre7\bin;c:\HashiCorp\Vagrant\bin;c:\Program Files (x86)\GtkSharp\2.12\bin;c:\Ruby21\bin;C:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby1.9.3\bin;c:\Users\collin\AppData\Roaming\npm;c:\PostgreSQL\lib;c:\Program Files (x86)\Java\jre7\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;c:\Program Files (x86)\Apache Software Foundation\apache-ant-1.9.4\bin;c:\oracle\bin;.
+Mar 11, 2015 8:20:36 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:20:36 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1359 ms
+Mar 11, 2015 8:20:36 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 11, 2015 8:20:36 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+Mar 11, 2015 8:20:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war
+Mar 11, 2015 8:20:39 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [386] milliseconds.
+Mar 11, 2015 8:20:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war has finished in 3,197 ms
+Mar 11, 2015 8:20:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs
+Mar 11, 2015 8:20:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs has finished in 162 ms
+Mar 11, 2015 8:20:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples has finished in 832 ms
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager has finished in 147 ms
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager has finished in 128 ms
+Mar 11, 2015 8:20:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:20:41 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:20:41 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4652 ms
+Mar 11, 2015 8:23:41 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/data-stuff-dev]
+Mar 11, 2015 8:23:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/data-stuff-dev] has started
+Mar 11, 2015 8:23:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/data-stuff-dev] is completed
+Mar 11, 2015 8:30:42 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:30:42 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:30:42 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:30:47 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context/WatchedResource'.
+Mar 11, 2015 8:30:47 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context'.
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.59
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jan 28 2015 15:51:10 UTC
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.59.0
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 8.1
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.3
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\Program Files\Java\jdk1.8.0_11\jre
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_11-b12
+Mar 11, 2015 8:30:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\Users\collin\IdeaProjects\project/tomcat\conf\logging.properties
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xms512m
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx1024m
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:MaxPermSize=256M
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSClassUnloadingEnabled
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSPermGenSweepingEnabled
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -agentlib:jdwp=transport=dt_socket,address=20004,server=y,suspend=n
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\Users\collin\IdeaProjects\project/tomcat\endorsed
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\Users\collin\IdeaProjects\project/tomcat\temp
+Mar 11, 2015 8:30:48 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\Program Files\Java\jdk1.8.0_11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\collin\bin;.;C:\RailsInstaller\Git\local\bin;C:\RailsInstaller\Git\mingw\bin;C:\RailsInstaller\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Program Files\nodejs;c:\Program Files\PostgreSQL\9.3\bin;c:\Program Files\PostgreSQL\9.3\lib;c:\Program Files (x86)\Java\jre7\bin;c:\HashiCorp\Vagrant\bin;c:\Program Files (x86)\GtkSharp\2.12\bin;c:\Ruby21\bin;C:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby1.9.3\bin;c:\Users\collin\AppData\Roaming\npm;c:\PostgreSQL\lib;c:\Program Files (x86)\Java\jre7\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;c:\Program Files (x86)\Apache Software Foundation\apache-ant-1.9.4\bin;c:\oracle\bin;.
+Mar 11, 2015 8:30:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:30:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1413 ms
+Mar 11, 2015 8:30:48 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 11, 2015 8:30:48 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+Mar 11, 2015 8:30:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war
+Mar 11, 2015 8:30:51 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [309] milliseconds.
+Mar 11, 2015 8:30:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war has finished in 3,004 ms
+Mar 11, 2015 8:30:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs
+Mar 11, 2015 8:30:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs has finished in 106 ms
+Mar 11, 2015 8:30:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples has finished in 857 ms
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager has finished in 136 ms
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager has finished in 137 ms
+Mar 11, 2015 8:30:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:30:52 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:30:52 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4443 ms
+Mar 11, 2015 8:35:12 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Mar 11, 2015 8:35:12 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:35:12 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:35:12 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 11, 2015 8:35:13 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:35:13 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:35:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:35:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:35:17 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context/WatchedResource'.
+Mar 11, 2015 8:35:17 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context'.
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.59
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jan 28 2015 15:51:10 UTC
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.59.0
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 8.1
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.3
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\Program Files\Java\jdk1.8.0_11\jre
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_11-b12
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\Users\collin\IdeaProjects\project/tomcat\conf\logging.properties
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xms512m
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx1024m
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:MaxPermSize=256M
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSClassUnloadingEnabled
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSPermGenSweepingEnabled
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -agentlib:jdwp=transport=dt_socket,address=20004,server=y,suspend=n
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\Users\collin\IdeaProjects\project/tomcat\endorsed
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:35:17 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\Users\collin\IdeaProjects\project/tomcat\temp
+Mar 11, 2015 8:35:17 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\Program Files\Java\jdk1.8.0_11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\collin\bin;.;C:\RailsInstaller\Git\local\bin;C:\RailsInstaller\Git\mingw\bin;C:\RailsInstaller\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Program Files\nodejs;c:\Program Files\PostgreSQL\9.3\bin;c:\Program Files\PostgreSQL\9.3\lib;c:\Program Files (x86)\Java\jre7\bin;c:\HashiCorp\Vagrant\bin;c:\Program Files (x86)\GtkSharp\2.12\bin;c:\Ruby21\bin;C:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby1.9.3\bin;c:\Users\collin\AppData\Roaming\npm;c:\PostgreSQL\lib;c:\Program Files (x86)\Java\jre7\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;c:\Program Files (x86)\Apache Software Foundation\apache-ant-1.9.4\bin;c:\oracle\bin;.
+Mar 11, 2015 8:35:18 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:35:18 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:35:18 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1403 ms
+Mar 11, 2015 8:35:18 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 11, 2015 8:35:18 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+Mar 11, 2015 8:35:18 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war
+Mar 11, 2015 8:35:21 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [363] milliseconds.
+Mar 11, 2015 8:35:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war has finished in 3,062 ms
+Mar 11, 2015 8:35:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs
+Mar 11, 2015 8:35:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs has finished in 129 ms
+Mar 11, 2015 8:35:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples has finished in 773 ms
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager has finished in 135 ms
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager has finished in 130 ms
+Mar 11, 2015 8:35:22 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:35:22 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:35:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4407 ms
+Mar 11, 2015 8:36:32 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/data-stuff-dev]
+Mar 11, 2015 8:36:32 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/data-stuff-dev] has started
+Mar 11, 2015 8:36:34 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/data-stuff-dev] is completed
+Mar 11, 2015 8:37:53 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Mar 11, 2015 8:37:53 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:37:53 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:37:53 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Mar 11, 2015 8:37:53 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:37:54 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:37:54 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:37:54 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:37:58 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context/WatchedResource'.
+Mar 11, 2015 8:37:58 PM org.apache.tomcat.util.digester.Digester endElement
+WARNING:   No rules found matching 'Server/Service/Engine/Context'.
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.59
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Jan 28 2015 15:51:10 UTC
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.59.0
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 8.1
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            6.3
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             c:\Program Files\Java\jdk1.8.0_11\jre
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_11-b12
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=c:\Users\collin\IdeaProjects\project/tomcat\conf\logging.properties
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xms512m
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Xmx1024m
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:MaxPermSize=256M
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSClassUnloadingEnabled
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+CMSPermGenSweepingEnabled
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -agentlib:jdwp=transport=dt_socket,address=20004,server=y,suspend=n
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=c:\Users\collin\IdeaProjects\project/tomcat\endorsed
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=c:\Users\collin\IdeaProjects\project/tomcat
+Mar 11, 2015 8:37:58 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=c:\Users\collin\IdeaProjects\project/tomcat\temp
+Mar 11, 2015 8:37:58 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: c:\Program Files\Java\jdk1.8.0_11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\collin\bin;.;C:\RailsInstaller\Git\local\bin;C:\RailsInstaller\Git\mingw\bin;C:\RailsInstaller\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Program Files\nodejs;c:\Program Files\PostgreSQL\9.3\bin;c:\Program Files\PostgreSQL\9.3\lib;c:\Program Files (x86)\Java\jre7\bin;c:\HashiCorp\Vagrant\bin;c:\Program Files (x86)\GtkSharp\2.12\bin;c:\Ruby21\bin;C:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby1.9.3\bin;c:\Users\collin\AppData\Roaming\npm;c:\PostgreSQL\lib;c:\Program Files (x86)\Java\jre7\bin;c:\Program Files (x86)\Apache Software Foundation\apache-maven-3.2.5\bin;c:\Program Files (x86)\Apache Software Foundation\apache-ant-1.9.4\bin;c:\oracle\bin;.
+Mar 11, 2015 8:37:59 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:37:59 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:37:59 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1396 ms
+Mar 11, 2015 8:37:59 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mar 11, 2015 8:37:59 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.59
+Mar 11, 2015 8:37:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war
+Mar 11, 2015 8:38:02 PM org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [313] milliseconds.
+Mar 11, 2015 8:38:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive C:\Users\collin\IdeaProjects\project\tomcat\webapps\data-stuff-dev.war has finished in 3,134 ms
+Mar 11, 2015 8:38:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs
+Mar 11, 2015 8:38:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\docs has finished in 105 ms
+Mar 11, 2015 8:38:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples
+Mar 11, 2015 8:38:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\examples has finished in 1,056 ms
+Mar 11, 2015 8:38:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager
+Mar 11, 2015 8:38:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\host-manager has finished in 209 ms
+Mar 11, 2015 8:38:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager
+Mar 11, 2015 8:38:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory C:\Users\collin\IdeaProjects\project\tomcat\webapps\manager has finished in 172 ms
+Mar 11, 2015 8:38:03 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mar 11, 2015 8:38:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mar 11, 2015 8:38:04 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4892 ms

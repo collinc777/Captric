@@ -1,24 +1,18 @@
-Todo:
- 
- 
- run db-deploy against the database
-	-in the build.xml file we need to point to our database instance
-	- run the db-deploy a few times to make sure migrations work multiple times
 
-java not compiling because of some wierd error  in jdbc library	
-Java
-	Create a DAO/DAOImpl
-	DAO is a data accessor object
-	These guys are the things that will tell our code how to save and retrieve object from the database
-	We can also put small amounts of logic in here if we want
-		-advise against it
-	Basically with a DAO you will OPEN A SESSION to our database instance
-		grab some stuf with a query
-	CLOSE session
-	
-FOR NOW ONLY
-	we can put our API slurper in the main body
+ OK, so now we at least have a redeployable database and web application.
 
+ This means that we can production ready our application anywhere...AWS...engineyard, or just a home compurter
+
+ This also means that a person can access our java application from the interenet.
+
+ TODO:
+
+Display an html file when hitting localhost:8080
+    That's it!!! that's all we have to figure out
+    Hints: look at how ROOT is usually deployed. Check stack overflow for deploying wars on tomcat
+
+Once that is figured out, we want to create a TicketsController.java
+    we can hit some route like /ticket/new and create a new ticket in the database
 	
 
 	

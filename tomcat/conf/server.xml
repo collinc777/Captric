@@ -122,6 +122,11 @@
                resourceName="UserDatabase"/>
       </Realm>
 
+        <Context path="" docBase="data-stuff-dev">
+            <!-- Default set of monitored resources -->
+            <WatchedResource>WEB-INF/web.xml</WatchedResource>
+        </Context>
+
       <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
