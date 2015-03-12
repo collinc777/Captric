@@ -3,7 +3,6 @@ package com.caram.model;
 /**
  * Created by collin on 3/2/2015.
  */
-
 import java.util.Date;
 import javax.persistence.*;
 

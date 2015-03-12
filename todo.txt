@@ -4,7 +4,8 @@ Todo:
  run db-deploy against the database
 	-in the build.xml file we need to point to our database instance
 	- run the db-deploy a few times to make sure migrations work multiple times
-	
+
+java not compiling because of some wierd error  in jdbc library	
 Java
 	Create a DAO/DAOImpl
 	DAO is a data accessor object

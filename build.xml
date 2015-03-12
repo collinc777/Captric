@@ -1,0 +1,160 @@
+<?xml version="1.0" ?>
+<project name="data-stuff" default="dev.build" basedir="."  xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+    <path id="compile.classpath">
+        <fileset dir="webapp/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="build" />
+        <delete dir="artifacts"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="build"/>
+        <mkdir dir="build/classes"/>
+        <mkdir dir="build/test.unit"/>
+        <mkdir dir="build/test-results/unit"/>
+        <mkdir dir="artifacts"/>
+    </target>
+
+    <!--<target name="resolve" description="To be used by DEVELOPMENT to retrieve dependencies with ivy... manually invocation ONLY cuz we checkin any libs retrieved!">-->
+        <!--<path id="ivy.lib.path">-->
+            <!--<fileset dir="${basedir}" includes="ivy-*.jar"/>-->
+
+        <!--</path>-->
+        <!--<taskdef resource="org/apache/ivy/ant/antlib.xml"-->
+                 <!--uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>-->
+
+        <!--<ivy:retrieve pattern="lib/runtime/[artifact]-[revision].[ext]" conf="runtime" sync="true"/>-->
+        <!--<ivy:retrieve pattern="lib/provided/[artifact]-[revision].[ext]" conf="provided" sync="true"/>-->
+        <!--<ivy:retrieve pattern="lib/test/[artifact]-[revision].[ext]" conf="test" sync="true"/>-->
+
+        <!--<delete file="lib/test/groovy-all-1.8.6.jar"/>-->
+        <!--<delete file="lib/test/groovy-1.8.8.jar"/>-->
+
+        <!--<copy file="3rd-party/sqljdbc4.jar" todir="lib/runtime"/>-->
+        <!--<copy file="3rd-party/service-simulator.jar" todir="lib/test"/>-->
+        <!--<copy file="3rd-party/bonecp-0.8.1-20131105.191813-1.jar" todir="lib/runtime"/>-->
+    <!--</target>-->
+
+    <!--<taskdef name="groovyc"-->
+             <!--classname="org.codehaus.groovy.ant.Groovyc"-->
+             <!--classpathref="compile.classpath"/>-->
+
+    <target name="compile" depends="init">
+
+        <javac srcdir="src" source="1.8"
+               target="1.8" debug="on" destdir="build/classes">
+            <classpath refid="compile.classpath"/>
+        </javac>
+
+        <!--<copy todir="build/classes">-->
+            <!--<fileset dir="src" includes="**/*.properties,**/*.xml"/>-->
+        <!--</copy>-->
+    </target>
+
+    <target name="resolve" description="--> retrieve dependencies with maven">
+        <!-- Resolve dependencies -->
+        <artifact:dependencies filesetId="dependency.fileset">
+            <pom file="pom.xml" />
+        </artifact:dependencies>
+        <!-- Copy all dependencies to the correct location. -->
+        <copy todir="webapp/WEB-INF/lib">
+            <fileset refid="dependency.fileset" />
+            <!-- This mapper strips off all leading directory information -->
+            <mapper type="flatten" />
+        </copy>
+    </target>
+
+    <!--<target name="test.unit.compile" depends="clean,compile">-->
+        <!--<groovyc destdir="build/test.unit"-->
+                 <!--srcdir="test">-->
+            <!--<classpath refid="test.unit.classpath"/>-->
+            <!--<javac source="${javaSourceTargetVersion}"-->
+                   <!--target="${javaSourceTargetVersion}" debug="on">-->
+                <!--<classpath refid="test.unit.classpath"/>-->
+            <!--</javac>-->
+        <!--</groovyc>-->
+    <!--</target>-->
+
+
+    <!--<target name="test.unit" depends="test.unit.compile" description="Run the unit tests">-->
+        <!--&lt;!&ndash;<junit maxmemory="2048m" fork="yes" forkmode="perBatch" failureproperty="test.unit.failed">&ndash;&gt;-->
+        <!--<junit fork="yes" forkmode="perBatch" failureproperty="test.unit.failed">-->
+            <!--<jvmarg value="-Dorg.jboss.logging.provider=slf4j"/>-->
+            <!--<jvmarg value="-Xmx1024m"/>-->
+            <!--<classpath refid="test.unit.classpath" />-->
+            <!--<formatter type="brief" usefile="false" />-->
+            <!--<formatter type="xml" usefile="true" />-->
+            <!--<batchtest fork="yes" todir="build/test-results/unit">-->
+                <!--<fileset dir="build/test.unit/">-->
+                    <!--<include name="**/*Test.class" />-->
+                    <!--<exclude name="**/Abstract*.class" />-->
+                <!--</fileset>-->
+            <!--</batchtest>-->
+        <!--</junit>-->
+        <!--<fail message="test.unit failed" if="test.unit.failed" />-->
+    <!--</target>-->
+
+
+
+
+
+
+    <target name="war" depends="compile" description="Build the WAR">
+        <war destfile="artifacts/data-stuff-dev.war">
+            <lib dir="webapp/WEB-INF/lib"/>
+            <classes dir="build/classes"/>
+            <fileset dir="webapp"/>
+        </war>
+        <copy file="artifacts/data-stuff-dev.war" todir="tomcat/webapps"/>
+    </target>
+
+    <target name="dist" depends="war" description="Runs the unit tests and builds the artifacts"/>
+
+    <target name="tomcat.run" depends="dist" description="deploys context and runs/restarts tomcat">
+        <antcall target="tomcat.stop"/>
+        <sleep milliseconds="5000"/>
+        <antcall target="tomcat.start"/>
+    </target>
+
+    <target name="tomcat.start" description="starts tomcat">
+        <delete dir="${basedir}/tomcat/work/Catalina"/>
+        <exec executable="cmd">
+            <arg value="/c"/>
+            <env key="CATALINA_HOME" value="${basedir}/tomcat"/>
+            <env key="CATALINA_OPTS" value="-Xms512m -Xmx1024m -server -XX:MaxPermSize=256M -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled"/>
+            <env key="JPDA_ADDRESS" value="20004"/>
+            <arg value="${basedir}/tomcat/bin/catalina.bat"/>
+            <arg value="jpda"/>
+            <arg value="start"/>
+        </exec>
+    </target>
+
+    <target name="tomcat.stop" description="stops tomcat">
+        <exec executable="cmd">
+            <env key="CATALINA_HOME" value="${basedir}/tomcat"/>
+            <arg value="/c"/>
+            <arg value="${basedir}/tomcat/bin/catalina.bat"/>
+            <arg value="stop"/>
+        </exec>
+    </target>
+
+    <!--<target name="tomcat.check">-->
+        <!--<waitfor maxwait="3" maxwaitunit="minute" checkevery="500">-->
+            <!--<http url="http://localhost:18084/mobi-route/diagnostics/status"/>-->
+        <!--</waitfor>-->
+        <!--<fail message="mobi-route did not start correctly.  Check log files, fix and try again.  Good luck :)">-->
+            <!--<condition>-->
+                <!--<not>-->
+                    <!--<http url="http://localhost:18084/mobi-route/diagnostics/status"/>-->
+                <!--</not>-->
+            <!--</condition>-->
+        <!--</fail>-->
+    <!--</target>-->
+
+    <target name="dev.build" depends="clean, init, resolve, compile, tomcat.run" description="Dev rebuild and run tomcat"/>
+</project>

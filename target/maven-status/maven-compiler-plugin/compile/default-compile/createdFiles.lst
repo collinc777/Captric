@@ -1,1 +1,5 @@
+com\caram\DAOinterface\TicketDao.class
+com\caram\model\Ticket.class
 com\caram\App.class
+com\caram\DAODemo\DAOTicketDemo.class
+com\caram\DAOobject\TicketDaoImpl.class
